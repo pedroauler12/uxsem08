@@ -1,0 +1,30 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e; /* Azul muito escuro, quase preto */
+    color: #e0e0e0; /* Cinza claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Evita barras de rolagem da página */
+}
+
+header, footer {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+h1 {
+    color: #9fa8da; /* Azul lavanda claro */
+    margin-bottom: 5px;
+}
+
+.instructions {
+    font-size: 0.9em;
+    color: #b0bec5; /* Cinza azulado */
+    margin-bottom: 15px;
+}
