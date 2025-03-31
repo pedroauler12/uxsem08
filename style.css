@@ -27,4 +27,49 @@ h1 {
     font-size: 0.9em;
     color: #b0bec5; /* Cinza azulado */
     margin-bottom: 15px;
+
 }
+
+.legend {
+    font-size: 0.8em;
+    color: #78909c; /* Cinza azulado mais escuro */
+    margin-top: 20px;
+    border-top: 1px solid #37474f; /* Linha sutil */
+    padding-top: 10px;
+}
+
+main {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#visualization-container {
+    width: 90vw; /* Ocupa boa parte da largura */
+    height: 75vh; /* Ocupa boa parte da altura */
+    max-width: 1000px; /* Limite máximo */
+    max-height: 700px; /* Limite máximo */
+    border: 1px solid #37474f; /* Borda sutil */
+    background-color: #0f101a; /* Fundo do SVG ainda mais escuro */
+    box-shadow: 0 0 15px rgba(159, 168, 218, 0.2); /* Brilho suave externo */
+    cursor: crosshair; /* Indica área clicável */
+    overflow: hidden; /* Garante que o SVG não vaze */
+}
+
+#visualization {
+    display: block; /* Remove espaço extra abaixo do SVG */
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo para as 'flores' - será manipulado via D3 */
+.noctiluca {
+    stroke: none;
+    /* O fill e filter serão definidos via JS/D3 */
+}
+
+/* Definição de um filtro de brilho que pode ser aplicado via D3 */
+/* Este filtro pode ser adicionado ao SVG via D3 no início */
+/*
